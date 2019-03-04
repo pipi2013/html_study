@@ -3,11 +3,48 @@
     <head>
         <meta charset="UTF-8">
         <title>blockandinline</title>
+        <style type="text/css">
+         body,div {
+             margin: 0;
+             padding: 0;
+         }
+
+         #div2{
+             width: 200px;
+             height:200px;
+             background-color: #900000
+         }
+
+         #div3{
+             width:100px;
+             height: 100px;
+             background-color: #000090;
+             color:#ffffff;
+         }
+
+         #aid {
+             /* 把内联转换为块状元素 */
+             display: block;
+             width: 50px;
+             height: 50px;
+             background-color: #000000;
+             color: #ffffff;
+         }
+
+         #aid2 {
+             background-color: #aaaaaa;
+         }
+        </style>
+
     </head>
     <body>
+        <!-- 解释 -->
+        
         <div id="div1">
             <div id="div2">块状元素</div>
-            <a href="#">内联元素</a>
+            <div id="div3">块元素3</div>
+            <a id="aid" href="#">内联元素</a>
+            <a id="aid2" href="#">内联元素2</a>
         </div>
     </body>
 </html>
